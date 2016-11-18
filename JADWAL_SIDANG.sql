@@ -1,0 +1,88 @@
+create table JADWAL_SIDANG (
+	IdJadwal INT,
+	IdMKS INT,
+	Tanggal DATE,
+	Jam Mulai VARCHAR(50),
+	Jam Selesai VARCHAR(50),
+	IdRuangan INT
+);
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900001','19181','1/1/2017','10.00 AM','12.00 PM','200001');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900002','19182','1/1/2017','10.00 AM','12.00 PM','200002');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900003','19183','1/1/2017','10.00 AM','12.00 PM','200003');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900004','19184','1/1/2017','10.00 AM','12.00 PM','200004');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900005','19230','1/1/2017','01.00 PM','03.00 PM','200005');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900006','19229','1/1/2017','01.00 PM','03.00 PM','200006');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900007','19228','1/1/2017','01.00 PM','03.00 PM','200007');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900008','19227','1/1/2017','01.00 PM','03.00 PM','200008');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900009','19185','1/2/2017','10.00 AM','12.00 PM','200009');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900010','19186','1/2/2017','10.00 AM','12.00 PM','200010');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900011','19187','1/2/2017','10.00 AM','12.00 PM','200011');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900012','19188','1/2/2017','10.00 AM','12.00 PM','200012');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900013','19226','1/2/2017','01.00 PM','03.00 PM','200013');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900014','19225','1/2/2017','01.00 PM','03.00 PM','200014');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900015','19224','1/2/2017','01.00 PM','03.00 PM','200015');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900016','19223','1/2/2017','01.00 PM','03.00 PM','200001');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900017','19189','1/3/2017','10.00 AM','12.00 PM','200002');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900018','19190','1/3/2017','10.00 AM','12.00 PM','200003');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900019','19191','1/3/2017','10.00 AM','12.00 PM','200004');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900020','19192','1/3/2017','10.00 AM','12.00 PM','200005');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900021','19222','1/3/2017','01.00 PM','03.00 PM','200006');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900022','19221','1/3/2017','01.00 PM','03.00 PM','200007');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900023','19220','1/3/2017','01.00 PM','03.00 PM','200008');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900024','19219','1/3/2017','01.00 PM','03.00 PM','200009');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900025','19193','1/4/2017','10.00 AM','12.00 PM','200010');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900026','19194','1/4/2017','10.00 AM','12.00 PM','200011');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900027','19195','1/4/2017','10.00 AM','12.00 PM','200012');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900028','19196','1/4/2017','10.00 AM','12.00 PM','200013');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900029','19218','1/4/2017','01.00 PM','03.00 PM','200014');
+INSERT INTO JADWAL_SIDANG (Idjadwal,IDMKS,Tanggal,Jam Mulai,Jam Selesai,Idruangan) VALUES ('900030','19217','1/4/2017','01.00 PM','03.00 PM','200015');
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900031, 19181, '1/19/2017', '1:06 PM', '1:57 PM', 200001);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900032, 19182, '1/21/2017', '12:31 PM', '6:54 PM', 200002);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900033, 19183, '1/15/2017', '10:42 PM', '8:27 PM', 200003);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900034, 19184, '1/6/2017', '8:05 PM', '3:15 AM', 200004);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900035, 19185, '1/17/2017', '6:05 AM', '12:57 PM', 200005);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900036, 19186, '1/8/2017', '12:37 AM', '8:25 PM', 200006);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900037, 19187, '1/15/2017', '1:37 AM', '3:57 PM', 200007);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900038, 19188, '1/24/2017', '7:17 AM', '11:42 AM', 200008);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900039, 19189, '1/10/2017', '4:08 PM', '6:23 PM', 200009);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900040, 19190, '1/15/2017', '9:16 AM', '2:38 AM', 200010);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900041, 19191, '1/15/2017', '8:18 AM', '10:17 PM', 200011);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900042, 19192, '1/11/2017', '8:08 AM', '6:35 PM', 200012);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900043, 19193, '1/23/2017', '2:40 PM', '6:49 AM', 200013);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900044, 19194, '1/10/2017', '7:15 PM', '12:09 PM', 200014);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900045, 19195, '1/26/2017', '5:47 PM', '11:27 AM', 200015);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900046, 19196, '1/6/2017', '4:58 PM', '11:11 AM', 200016);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900047, 19197, '1/24/2017', '12:52 AM', '10:50 PM', 200017);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900048, 19198, '1/5/2017', '10:35 PM', '5:05 AM', 200018);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900049, 19199, '1/19/2017', '8:50 AM', '5:23 PM', 200019);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900050, 19200, '1/29/2017', '4:42 PM', '8:00 PM', 200020);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900051, 19201, '1/25/2017', '10:03 PM', '7:42 PM', 200021);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900052, 19202, '1/7/2017', '1:01 PM', '7:10 PM', 200022);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900053, 19203, '1/15/2017', '11:17 AM', '4:11 AM', 200023);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900054, 19204, '1/21/2017', '8:05 PM', '5:27 PM', 200024);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900055, 19205, '1/10/2017', '5:08 AM', '5:00 PM', 200025);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900056, 19206, '1/16/2017', '2:42 PM', '2:36 AM', 200026);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900057, 19207, '1/29/2017', '7:01 AM', '8:23 AM', 200027);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900058, 19208, '1/13/2017', '2:24 AM', '9:02 PM', 200028);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900059, 19209, '1/28/2017', '12:34 PM', '8:10 AM', 200029);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900060, 19210, '1/15/2017', '6:45 PM', '12:23 PM', 200030);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900061, 19211, '1/17/2017', '2:42 AM', '8:08 AM', 200031);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900062, 19212, '1/9/2017', '11:11 AM', '5:46 PM', 200032);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900063, 19213, '1/21/2017', '1:36 AM', '10:12 AM', 200033);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900064, 19214, '1/26/2017', '8:42 PM', '3:57 PM', 200034);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900065, 19215, '1/25/2017', '8:15 PM', '4:05 PM', 200035);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900066, 19216, '1/12/2017', '6:31 AM', '11:14 AM', 200001);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900067, 19217, '1/20/2017', '10:49 AM', '12:44 PM', 200001);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900068, 19218, '1/23/2017', '6:17 AM', '4:37 PM', 200001);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900069, 19219, '1/9/2017', '12:14 AM', '8:16 PM', 200001);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900070, 19220, '1/24/2017', '11:40 PM', '12:47 AM', 200001);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900071, 19221, '1/12/2017', '12:01 AM', '5:44 AM', 200001);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900072, 19222, '1/15/2017', '9:01 PM', '7:04 PM', 200001);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900073, 19223, '1/12/2017', '9:24 AM', '10:28 AM', 200001);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900074, 19224, '1/9/2017', '7:18 AM', '9:33 PM', 200001);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900075, 19225, '1/5/2017', '11:41 PM', '12:24 PM', 200001);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900076, 19226, '1/13/2017', '12:24 PM', '9:57 PM', 200001);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900077, 19227, '1/8/2017', '9:30 AM', '9:04 AM', 200001);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900078, 19228, '1/13/2017', '10:53 AM', '1:33 PM', 200001);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900079, 19229, '1/16/2017', '4:46 AM', '4:37 AM', 200001);
+insert into JADWAL_SIDANG (IdJadwal, IdMKS, Tanggal, Jam Mulai, Jam Selesai, IdRuangan) values (900080, 19230, '1/7/2017', '5:25 AM', '5:57 AM', 200001);
