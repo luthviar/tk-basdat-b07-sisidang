@@ -1,0 +1,53 @@
+.form-signin {
+	width: 25%;
+	height: 50%;
+	margin: auto;
+	margin-top: 15%;
+	padding: 1%;
+	text-align: center;
+	color: white;
+	background-color: gray;
+}
+
+.post {
+	background-color: gray;
+	margin: 1%;
+	padding: 1%;
+}
+
+.status {
+	font-size: 20px;
+}
+
+#profile-picture {
+	background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+	display: inline-block;
+	padding: 2.5%;
+}
+
+header {
+	width: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+.name {
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	padding-bottom: 1.75%;
+}
+
+.about{
+	margin-top: 0px;
+}
+
+#new-status {
+	display: none;
+}

@@ -1,0 +1,192 @@
+<html>
+  <head>  
+    <meta charset= "UTF-8">
+    <meta name= "author" content= "greysitorus">
+    <meta name= "viewport" content= "width= device-width, initial-scale=1">
+
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Montserrat:700'>
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link rel= "stylesheet" type= "text/css" href= "css/bootstrap.css">
+    <link rel= "stylesheet" type= "text/css" href= "css/main.css">
+    <script type= "text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script type= "text/javascript" src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <title>Sisidang</title>
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Sisidang</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#">Role: admin</a></li>
+            <li>
+              <div class= "dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> Action
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Tambah Peserta MKS</a></li>
+              <li><a href="#">Buat Jadwal Sidang MKS</a></li>
+              <li><a href="#">Buat Jadwal Non-Sidang Dosen</a></li>
+              <li><a href="#">Lihat Jadwal Sidang</a></li>
+              <li><a href="#">Lihat Daftar MKS</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </div>
+        </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-8 col-md-offset-6 col-lg-offset-4">
+          <div class="well">
+          <h3 align="center">Pencarian Jadwal Sidang</h3>
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="location1" class="control-label">Term</label>
+                <select class="form-control" name="" id="location1">
+                  <option value="">Ganjil 2012/2013</option>
+                  <option value="">Genap 2012/2013</option>
+                  <option value="">Ganjil 2013/2014</option>
+                  <option value="">Genap 2013/2014</option>
+                  <option value="">Ganjil 2014/2015</option>
+                  <option value="">Genap 2014/2015</option>
+                  <option value="">Ganjil 2015/2016</option>
+                  <option value="">Genap 2015/2016</option>
+                  <option value="">Ganjil 2016/2017</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="type1" class="control-label">Jenis Sidang</label>
+                <select class="form-control" name="" id="type1">
+                  <option value="">Skripsi</option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+              </div>
+              <p class="text-center"><a href="#" class="btn btn-danger" role="button">Cari</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-success centered">Tambah</button>
+    <div class ="container">
+      <table class="table table-striped table-bordered container">
+        <thead class="thead-inverse">
+          <tr>
+            <th>Mahasiswa<span class="caret"></span></th>
+            <th>Jenis Sidang<span class="caret"></span></th>
+            <th>Judul</th>
+            <th>Waktu dan Lokasi<span class="caret"></span></th>
+            <th>Dosen Pembimbing</th>
+            <th>Dosen Penguji</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Andi</td>
+            <td>Skripsi</td>
+            <td>Green ICT</td>
+            <td>17 Nov 2016 09:00 – 10:30 2.2301</td>
+            <td><ul><li>Ani</li></ul></td>
+            <td><ul><li>Anto</li><li>Alif</li></td>
+            <td>Edit</td>
+          </tr>
+          <tr>
+            <td>Budi</td>
+            <td>Skripsi</td>
+            <td>Green ICT</td>
+            <td>19 Nov 2016 15:00 – 16:30 2.2502</td>
+            <td><ul><li>Bayu</li></ul></td>
+            <td><ul><li>Cecep</li><li>Chanek</li></td>
+            <td>Edit</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="button" class="btn btn-success">Prev</button>
+      <button type="button" class="btn btn-success">Next</button>
+    </div>
+  </body>
+</html>
