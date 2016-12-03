@@ -1,0 +1,282 @@
+<?php 
+include_once '..\Config\Database.php';
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">    
+
+    <title>SI - SIDANG</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="make_jadwal/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="make_jadwal/assets/css/datepicker.css" rel="stylesheet">
+  </head>
+
+  <body>    
+    <nav class="navbar navbar-default navbar-fixed-top"> 
+      <div class="container-fluid"> 
+        <div class="navbar-header"> 
+          <a class="navbar-brand" href="#">Si - sidang</a> 
+        </div> 
+        <ul class="nav navbar-nav navbar-right"> 
+
+		    <li class="active"><a href="index.html">Home</a></li> 
+		         <li><a href="#">Role: admin</a></li> 
+		         <li> 
+		          <div class= "dropdown"> 
+		      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> Action 
+		      <span class="caret"></span></button> 
+		      <ul class="dropdown-menu"> 
+		       <li><a href="#">Tambah Peserta MKS</a></li> 
+		       <li><a href="#">Buat Jadwal Non-Sidang Dosen</a></li> 
+		       <li><a href="#">Lihat Jadwal Sidang</a></li> 
+		       <li><a href="#">Lihat Daftar MKS</a></li> 
+		        <li><a href="#">Logout</a></li> 
+		      </ul> 
+		    </div> 
+		   </li> 
+        </ul> 
+      </div> 
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h2 class="text-center">Tambah Jadwal Sidang MKS</h2>       
+        
+        <p class="col-sm-6 text-right"><a class="btn btn-success btn-lg" href="#" role="button">Simpan</a></p>
+        <p class="col-sm-6"><a class="btn btn-danger btn-lg" href="#" role="button">Batal</a></p>
+
+		<form class="form-horizontal col-xs-offset-2" method="POST" action="get1.php">
+		    <div class="form-group">
+		        <label for="inputMahasiswa" class="control-label col-xs-2">Mahasiswa*</label>
+		        <div class="col-xs-6">
+		            <select class="form-control" id="inputMahasiswa">
+		            <?php
+
+				       	$data = Database::result("SELECT * FROM si_sidang.mahasiswa");
+				       	
+				       	for($i=0;$i < count($data);$i++) {
+				       		echo "<option>".$data[$i]['nama'] ."</option>";
+				       	}
+						
+					?>				        
+			      	</select>
+		        </div>		        			      
+		    </div>
+		   
+		    <div class="form-group">
+		    	<label for="inputTanggal" class="control-label col-xs-2">Tanggal*</label>
+		    	<div class="col-xs-6 datepick">
+		    		<input name="inputTanggal" type="text" class="form-control" id="inputTanggal" placeholder="Tanggal Sidang MKS">			  				  		    		
+		    	</div>
+			</div>
+
+		    <div class="form-group">
+		        <label for="inputJamMulai" class="control-label col-xs-2">Jam Mulai* 
+		        <h6>contoh format = 10:30</h6></label>
+
+		        <div class="col-xs-6">
+		            <input type="text" class="form-control" id="inputJamMulai" placeholder="Jam Mulai Sidang MKS" value="10:30">
+		        </div>
+		    </div>
+
+		    <div class="form-group">
+		        <label for="inputJamSelesai" class="control-label col-xs-2">Jam Selesai*
+		        <h6>contoh format = 12:00</h6></label>
+		        <div class="col-xs-6">
+		            <input type="text" class="form-control" id="inputJamSelesai" placeholder="Jam Selesai Sidang MKS" value="12:00">
+		        </div>
+		    </div>
+
+		    <div class="form-group">
+		        <label for="inputRuangan" class="control-label col-xs-2">Ruangan*</label>
+		        <div class="col-xs-6">
+		            <select class="form-control" id="inputRuangan">
+				         <?php
+
+					       	$data = Database::result("SELECT * FROM si_sidang.ruangan");
+					       	
+					       	for($i=0;$i < count($data);$i++) {
+					       		echo "<option>".$data[$i]['idruangan']. "-". $data[$i]['nama']. "</option>";
+					       	}
+						
+						?>					     
+			      	</select>
+		        </div>
+		    </div>
+		    <div class="form-group">
+		        <label for="inputPenguji1" class="control-label col-xs-2">Penguji 1*</label>
+		        <div class="col-xs-6">
+		            <select class="form-control" id="inputPenguji1">
+		            	<?php
+
+					       	$data = Database::result("SELECT * FROM 
+					       	si_sidang.saran_dosen_penguji p, si_sidang.dosen d
+					       	WHERE p.nipsaranpenguji=d.nip
+					       	ORDER BY nama DESC
+					       	");
+					       	
+					       	for($i=0;$i < count($data);$i++) {
+					       		echo "<option>".$data[$i]['nama']. "</option>";
+					       	}
+						
+						?>							        
+			      	</select>
+		        </div>
+		    </div>
+		    <div class="form-group">
+		        <label for="inputPenguji2" class="control-label col-xs-2">Penguji 2</label>
+		        <div class="col-xs-6">
+		            <select class="form-control" id="inputPenguji1">
+				        <?php
+
+					       	$data = Database::result("SELECT * FROM 
+					       	si_sidang.saran_dosen_penguji p, si_sidang.dosen d
+					       	WHERE p.nipsaranpenguji=d.nip
+					       	ORDER BY nama DESC
+					       	");
+					       	
+					       	for($i=0;$i < count($data);$i++) {
+					       		echo "<option>".$data[$i]['nama']. "</option>";
+					       	}
+						
+						?>			
+			      	</select>
+		        </div>
+		    </div>		    
+		    <div class="form-group">
+		    	<label for="inputHardcopy" class="control-label col-xs-2">Pengumpulan Hardcopy*</label>
+		        <div class="col-xs-6">
+		            <div class="checkbox">
+		                <label><input id="inputHardcopy" type="checkbox">Sudah</label>
+		            </div>
+		        </div>
+		    </div>		    
+		    
+		    <div class="form-group">
+		        <div class="col-xs-offset-2 col-xs-6">
+		            <button type="submit" class="btn btn-primary">+ Tambah Penguji</button>
+		        </div>
+		    </div>
+		</form>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <h2 class="text-center">Ubah Jadwal Sidang MKS</h2>        
+        <p class="col-sm-6 text-right"><a class="btn btn-success btn-lg" href="#" role="button">Simpan</a></p>
+        <p class="col-sm-6"><a class="btn btn-danger btn-lg" href="#" role="button">Batal</a></p>
+
+		<form class="form-horizontal col-xs-offset-2">
+		    <div class="form-group">
+		        <label for="changeMahasiswa" class="control-label col-xs-2">Mahasiswa</label>
+		        <div class="col-xs-6">
+		            <select class="form-control" id="changeMahasiswa">
+				        <option>Luthfi Abdurrahim</option>
+				        <option>Izzan Nurruddin</option>
+				        <option>Glenn</option>
+				        <option>Viro</option>
+			      	</select>
+		        </div>		        
+			      
+		    </div>
+		    <div class="form-group">
+		        <label for="changeTanggal" class="control-label col-xs-2">Tanggal</label>
+		        <div class="col-xs-6">
+		            <input type="text" class="form-control" id="changeTanggal" placeholder="Tanggal Sidang MKS" value="19-11-2016">
+		        </div>
+		    </div>
+		    <div class="form-group">
+		        <label for="changeJamMulai" class="control-label col-xs-2">Jam Mulai</label>
+		        <div class="col-xs-6">
+		            <input type="text" class="form-control" id="changeJamMulai" placeholder="Jam Mulai Sidang MKS" value="10:30">
+		        </div>
+		    </div>
+		    <div class="form-group">
+		        <label for="changeJamSelesai" class="control-label col-xs-2">Jam Selesai</label>
+		        <div class="col-xs-6">
+		            <input type="text" class="form-control" id="changeJamSelesai" placeholder="Jam Selesai Sidang MKS" value="12:00">
+		        </div>
+		    </div>
+		    <div class="form-group">
+		        <label for="changeRuangan" class="control-label col-xs-2">Ruangan</label>
+		        <div class="col-xs-6">
+		            <select class="form-control" id="changeRuangan">
+				        <option>2.2301</option>
+				        <option>2.2302</option>
+				        <option>2.2306</option>
+				        <option>2.2307</option>
+			      	</select>
+		        </div>
+		    </div>
+		    <div class="form-group">
+		        <label for="changePenguji1" class="control-label col-xs-2">Penguji 1</label>
+		        <div class="col-xs-6">
+		            <select class="form-control" id="changePenguji1">
+				        <option>Alief</option>
+				        <option>Anto</option>
+				        <option>Budi</option>
+				        <option>Viro</option>
+			      	</select>
+		        </div>
+		    </div>
+		    <div class="form-group">
+		        <label for="changePenguji2" class="control-label col-xs-2">Penguji 2</label>
+		        <div class="col-xs-6">
+		            <select class="form-control" id="changePenguji1">
+				        <option>Cecep</option>
+				        <option>Anto</option>
+				        <option>Alief</option>
+				        <option>Viro</option>
+				        <option>Budi</option>
+			      	</select>
+		        </div>
+		    </div>		    
+		    <div class="form-group">
+		    	<label for="changeHardcopy" class="control-label col-xs-2">Pengumpulan Hardcopy</label>
+		        <div class="col-xs-6">
+		            <div class="checkbox">
+		                <label><input id="changeHardcopy" type="checkbox">Sudah</label>
+		            </div>
+		        </div>
+		    </div>		    
+		    
+		    <div class="form-group">
+		        <div class="col-xs-offset-2 col-xs-6">
+		            <button type="submit" class="btn btn-primary">+ Tambah Penguji</button>
+		        </div>
+		    </div>
+		</form>
+
+ 
+
+      <hr>
+
+      <footer>
+        <p class="text-center">&copy; tk basdat - SI SIDANG - 2016.</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="make_jadwal/assets/js/jquery-3.1.1.min.js"></script>    
+    <script type="text/javascript" src="make_jadwal/assets/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="make_jadwal/assets/js/npm.js"></script> -->
+    <script type="text/javascript" src="make_jadwal/assets/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
+    	$('.datepick input').datepicker({
+			});
+    </script>
+  </body>
+</html>
